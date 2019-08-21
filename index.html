@@ -4,50 +4,54 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel='stylesheet' href='index.css' type='text/css' />
     <title>Waitstaff Calculator</title>
 </head>
 <body>
     <header>
         <h1>Waitstaff Calculator</h1>
     </header>
-    
-    <section class="meal-detail-form">
-        <form class="meal-form">
-            <h2>Enter meal details</h2>
-            <label for="base-meal-price">
-                <span>Base meal price: $ </span>
-                <input type="text" name="base-meal-price" id="base-meal-price">
-            </label>
+    <main>
+        <section class="meal-detail-form">
+            <form class="meal-form">
+                <h2>Enter meal details</h2>
+                <label for="base-meal-price">
+                    <span>Base meal price: $ </span>
+                    <input type="text" name="base-meal-price" id="base-meal-price">
+                </label>
 
-            <label for="tax-rate">
-                <span>Tax rate: % </span>
-                <input type="text" name="tax-rate" id="tax-rate" value="8%">
-            </label>
+                <label for="tax-rate">
+                    <span>Tax rate: % </span>
+                    <input type="text" name="tax-rate" id="tax-rate">
+                </label>
 
-            <label for="tip-percent">
-                <span>Tip percentage: % </span>
-                <input type="text" name="tip-percent" id="tip-percent">
-            </label>
+                <label for="tip-percent">
+                    <span>Tip percentage: % </span>
+                    <input type="text" name="tip-percent" id="tip-percent">
+                </label>
+                <div class="inline">
+                    <button type="submit" name=" submit-button" class="submit-meal-details">Submit</button>
+                    <button type="button" class="cancel-order">Cancel</button>
+                </div>
+            </form>
+        </section>
 
-            <button type="submit" class="submit-meal-details">Submit</button>
-            <!-- <button type="submit" class="cancel-order">Cancel</button> -->
-        </form>
-    </section>
+        <div class="charges-earnings-block">
+            <section class="customer-charges">
+                <h3>Customer charges</h3>
+                <p class="subtotal">Subtotal: </p>
+                <p class="tip">Tip Amount: </p>
+                <p class="total">Total: </p>
+            </section>
 
-    <section class="customer-charges">
-        <h3>Customer charges</h3>
-        <p class="subtotal">Subtotal: </p>
-        <p class="Tip">Tip: </p>
-        <p class="Total">Total: </p>
-    </section>
-
-    <section class="my-earnings">
-        <h4>My earnings info</h4>
-        <p class="tip-total">Tip total: </p>
-        <p class="meal-count">Meal count: </p>
-        <p class="average-tip">Average tip: </p>      
-    </section>
-
+            <section class="my-earnings">
+                <h4>My earnings info</h4>
+                <p class="tip-total">Tip total: </p>
+                <p class="meal-count">Meal count: </p>
+                <p class="average-tip">Average tip: </p>      
+            </section>
+        </div>
+    </main>
     <script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
     <script src="index.js"></script>
 </body>
